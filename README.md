@@ -27,3 +27,9 @@ Cerramos y volvemos a abrir la maquina virtual, para que se efectuen los cambios
 -e WEBHOOK_URL="https://your-domain.com/" \
 -v n8n_data:/home/node/.n8n \
 n8nio/n8n:'VERSION'
+
+Asi es como puse el paso 15 en el video:
+15. docker run -d --restart unless-stopped --name n8n -p 5678:5678 -e N8N_HOST="n8n.facundocorengia.com" -e WEBHOOK_TUNNEL_URL="https://n8n.facundocorengia.com/" -e WEBHOOK_URL="https://n8n.facundocorengia.com/" -v n8n_data:/home/node/.n8n n8nio/n8n:1.81.4
+
+Salio distinto pero deberia ser lo mismo.
+
