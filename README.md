@@ -12,7 +12,7 @@ Cerramos y volvemos a abrir la maquina virtual, para que se efectuen los cambios
 5. docker ps -a
 6. docker cp <container_id>:/home/node/.n8n ./n8n_backup
 7. ls -la ./n8n_backup
-8. docker pull docker.n8n.io/n8nio/n8n:'VERSION'
+8. docker pull docker.n8n.io/n8nio/n8n:'VERSION' (buscar en https://hub.docker.com/r/n8nio/n8n/tags)
 9. docker stop <container_id> 
 10. docker rm <container_id>
 11. docker volume create n8n_data
