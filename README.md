@@ -19,7 +19,7 @@ Cerramos y volvemos a abrir la maquina virtual, para que se efectuen los cambios
 12. docker run --rm -v n8n_data:/data -v $(pwd)/n8n_backup:/backup busybox sh -c "cp -r /backup/* /data/"
 13. sudo chown -R 1000:1000 /var/lib/docker/volumes/n8n_data/_data
 14. sudo chmod -R 700 /var/lib/docker/volumes/n8n_data/_data
-15. docker run -d --restart unless-stopped --name n8n -p 5678:5678 -e N8N_HOST="n8n.facundocorengia.com" -e WEBHOOK_TUNNEL_URL="https://n8n.facundocorengia.com/" -e WEBHOOK_URL="https://n8n.facundocorengia.com/" -v n8n_data:/home/node/.n8n n8nio/n8n:1.81.4
+15. docker run -d --restart unless-stopped --name n8n -p 5678:5678 -e N8N_HOST="n8ncopy.aigenzo.com" -e WEBHOOK_TUNNEL_URL="https://n8ncopy.aigenzo.com/" -e WEBHOOK_URL="https://n8ncopy.aigenzo.com/" -v n8n_data:/home/node/.n8n n8nio/n8n:1.81.4
 
 Asi es como puse el paso 15 en el video.
 Salio distinto pero deberia ser lo mismo.
